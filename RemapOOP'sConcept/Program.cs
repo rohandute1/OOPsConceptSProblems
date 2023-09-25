@@ -69,7 +69,6 @@ namespace RemapOOP_sConcept
                         int num1 = 5, num2 = 10;
                         double numb1 = 3.14, numb2 = 2.0;
 
-                        // Accessing the CalculateAndDisplay methods using the calculator object
                         cal.CalculateAndDisplay(num1, num2);
                         cal.CalculateAndDisplay(numb1, numb2);
                         break;
