@@ -63,16 +63,7 @@ namespace RemapOOP_sConcept
                         calculator.Calculate(intNum1, intNum2);
                         calculator.Calculate(doubleNum1, doubleNum2);
                         break;
-                    case 5:
-                        Calculator cal = new Calculator();
-
-                        int num1 = 5, num2 = 10;
-                        double numb1 = 3.14, numb2 = 2.0;
-
-                        // Accessing the CalculateAndDisplay methods using the calculator object
-                        cal.CalculateAndDisplay(num1, num2);
-                        cal.CalculateAndDisplay(numb1, numb2);
-                        break;
+                
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");
                         break;
