@@ -15,7 +15,7 @@ namespace RemapOOP_sConcept
             while (continueExecution)
             {  
                 Console.WriteLine("Please choose any one of the following program:");
-                Console.WriteLine("1.Class Object Program\n");
+                Console.WriteLine("1.Class Object Program\n2.Inheritance concept");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -29,6 +29,16 @@ namespace RemapOOP_sConcept
 
                         Console.WriteLine("\nPerson 2:");
                         person2.DisplayInfo();
+                        break;
+
+                    case 2:
+                        Car myCar = new Car("Toyota", "Camry", 2022, 200);
+
+                        Console.WriteLine("Vehicle Information:");
+                        myCar.DisplayInfo();
+
+                        Console.WriteLine("\nCar Information:");
+                        myCar.DisplayCarInfo();
                         break;
 
                     default:
