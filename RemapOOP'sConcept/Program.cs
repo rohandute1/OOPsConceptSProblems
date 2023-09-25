@@ -15,7 +15,8 @@ namespace RemapOOP_sConcept
             while (continueExecution)
             {  
                 Console.WriteLine("Please choose any one of the following program:");
-                Console.WriteLine("1.Class Object Program\n2.Inheritance concept");
+                Console.WriteLine("1.Class Object Program\n2.Inheritance Problem\n3.Polymorphism overriding Concept\n" +
+                    "4.Method Overloading Concept\n5.Encapsulation Problem");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,6 +42,37 @@ namespace RemapOOP_sConcept
                         myCar.DisplayCarInfo();
                         break;
 
+                    case 3:
+                        
+                        Shape[] shapes = new Shape[3];
+                        shapes[0] = new Shape();
+                        shapes[1] = new Circle();
+                        shapes[2] = new Rectangle();
+
+                        foreach (var shape in shapes)
+                        {
+                            shape.Draw();
+                        }
+                        break;
+                    case 4:
+                        MethodOverloading calculator = new MethodOverloading();
+
+                        int intNum1 = 5, intNum2 = 10;
+                        double doubleNum1 = 3.14, doubleNum2 = 2.0;
+
+                        calculator.Calculate(intNum1, intNum2);
+                        calculator.Calculate(doubleNum1, doubleNum2);
+                        break;
+                    case 5:
+                        Calculator cal = new Calculator();
+
+                        int num1 = 5, num2 = 10;
+                        double numb1 = 3.14, numb2 = 2.0;
+
+                        // Accessing the CalculateAndDisplay methods using the calculator object
+                        cal.CalculateAndDisplay(num1, num2);
+                        cal.CalculateAndDisplay(numb1, numb2);
+                        break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");
                         break;
