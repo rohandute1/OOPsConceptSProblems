@@ -16,7 +16,8 @@ namespace RemapOOP_sConcept
             {  
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Class Object Program\n2.Inheritance Problem\n3.Polymorphism overriding Concept\n" +
-                    "4.Method Overloading Concept\n5.Encapsulation Problem");
+                    "4.Method Overloading Concept\n5.Encapsulation Problem\n6.Abstraction Problem" +
+                    "");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -71,6 +72,11 @@ namespace RemapOOP_sConcept
 
                         cal.CalculateAndDisplay(num1, num2);
                         cal.CalculateAndDisplay(numb1, numb2);
+                        break;
+                    case 6:
+                        Pig myPig = new Pig();
+                        myPig.animalSound();
+                        myPig.sleep();
                         break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");
