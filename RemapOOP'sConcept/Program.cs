@@ -16,8 +16,8 @@ namespace RemapOOP_sConcept
             {  
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Class Object Program\n2.Inheritance Problem\n3.Polymorphism overriding Concept\n" +
-                    "4.Method Overloading Concept\n5.Encapsulation Problem\n6.Abstraction Problem" +
-                    "");
+                    "4.Method Overloading Concept\n5.Encapsulation Problem\n6.Abstraction Problem\n" +
+                    "7.Variable types Check\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -77,6 +77,15 @@ namespace RemapOOP_sConcept
                         Pig myPig = new Pig();
                         myPig.animalSound();
                         myPig.sleep();
+                        break;
+                    case 7:
+                        VariableTypesDemo demo = new VariableTypesDemo();
+
+                        Console.WriteLine("Instance Variables:");
+                        demo.DisplayInstanceVariables();
+
+                        Console.WriteLine("\nStatic Variables:");
+                        VariableTypesDemo.DisplayStaticVariables();
                         break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");
