@@ -17,7 +17,7 @@ namespace RemapOOP_sConcept
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Class Object Program\n2.Inheritance Problem\n3.Polymorphism overriding Concept\n" +
                     "4.Method Overloading Concept\n5.Encapsulation Problem\n6.Abstraction Problem\n" +
-                    "7.Variable types Check\n");
+                    "7.Variable types Check\n8.Method typpe check");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -89,6 +89,36 @@ namespace RemapOOP_sConcept
                         break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");
+                        break;
+                    case 8:
+                        MathOperationMethodType calc = new MathOperationMethodType();
+
+                        int n1 = 10, n2 = 5;
+                        double doubleN1 = 7.5, doubleN2 = 2.5;
+
+                        int intSum = calc.Add(n1, n2);
+                        double doubleSum = calc.Add(doubleN1, doubleN2);
+
+                        int intDifference = calc.Subtract(n1, n2);
+                        double doubleDifference = calc.Subtract(doubleN1, n2);
+
+                        int intProduct = calc.Multiply(n1, n2);
+                        double doubleProduct = calc.Multiply(doubleN1, n2);
+
+                        int intQuotient = calc.Divide(n1, n2);
+                        double doubleQuotient = calc.Divide(doubleN1, doubleN2);
+
+                        Console.WriteLine($"Integer Sum: {intSum}");
+                        Console.WriteLine($"Double Sum: {doubleSum}");
+
+                        Console.WriteLine($"Integer Difference: {intDifference}");
+                        Console.WriteLine($"Double Difference: {doubleDifference}");
+
+                        Console.WriteLine($"Integer Product: {intProduct}");
+                        Console.WriteLine($"Double Product: {doubleProduct}");
+
+                        Console.WriteLine($"Integer Quotient: {intQuotient}");
+                        Console.WriteLine($"Double Quotient: {doubleQuotient}");
                         break;
                 }
                 Console.WriteLine("Do you want to continue?(yes or no)");
