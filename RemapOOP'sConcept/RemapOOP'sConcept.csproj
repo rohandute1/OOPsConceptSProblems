@@ -47,6 +47,7 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="MathOperationMethodType.cs" />
     <Compile Include="MethodOverloading.cs" />
+    <Compile Include="NumCalculatorTypeCheck.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

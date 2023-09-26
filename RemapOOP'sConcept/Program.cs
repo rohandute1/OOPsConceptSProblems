@@ -17,7 +17,7 @@ namespace RemapOOP_sConcept
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Class Object Program\n2.Inheritance Problem\n3.Polymorphism overriding Concept\n" +
                     "4.Method Overloading Concept\n5.Encapsulation Problem\n6.Abstraction Problem\n" +
-                    "7.Variable types Check\n8.Method typpe check");
+                    "7.Variable types Check\n8.Method typpe check\n9.Check value type and referance type");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -119,6 +119,15 @@ namespace RemapOOP_sConcept
 
                         Console.WriteLine($"Integer Quotient: {intQuotient}");
                         Console.WriteLine($"Double Quotient: {doubleQuotient}");
+                        break;
+                    case 9:
+                        NumCalculatorTypeCheck calci = new NumCalculatorTypeCheck();
+
+                        int no1 = 5, no2 = 10;
+                        double doubleNo1 = 7.25, doubleNo2 = 21.7;
+
+                        calci.Add(no1, no2);
+                        calci.Add(doubleNo1, doubleNo2);
                         break;
                 }
                 Console.WriteLine("Do you want to continue?(yes or no)");
